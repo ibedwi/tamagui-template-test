@@ -51,7 +51,7 @@ You can add other folders inside of `packages/` if you know what you're doing an
 
 We've added `packages/ui` to show an example of [building your own design system](https://tamagui.dev/docs/guides/design-systems).
 
-You need to watch it to have changes propagate, we've added a root `watch` command you should run in a separate terminal alongside the apps:
+  You need to watch it to have changes propagate, we've added a root `watch` command you should run in a separate terminal alongside the apps:
 
 ```bash
 yarn watch
