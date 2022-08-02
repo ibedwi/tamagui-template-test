@@ -14,7 +14,6 @@ import React, { useState } from 'react'
 import { useLink } from 'solito/link'
 
 export function HomeScreen() {
-
   return (
     <YStack f={1} jc="flex-start" ai="stretch" space pt="$2" px="$2">
       <YStack space="$4" maw={600}>
