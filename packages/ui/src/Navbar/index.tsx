@@ -1,4 +1,5 @@
 import { Text, XStack, H4, Paragraph, Button } from 'tamagui'
+import { RGButton } from '../Button'
 
 export const Navbar = () => {
   return (
@@ -11,7 +12,8 @@ export const Navbar = () => {
       </XStack>
 
       <XStack>
-        <Button>Langganan</Button>
+        <Button backgroundColor={'$orange50'}>Langganan</Button>
+        <RGButton type={'primary'}>Langganan Sekarang</RGButton>
       </XStack>
     </XStack>
   )
