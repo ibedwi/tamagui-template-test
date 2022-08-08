@@ -1,9 +1,10 @@
-import { createTamagui } from '@my/ui'
+import { createTamagui, createTokens } from '@my/ui'
 import { createInterFont } from '@tamagui/font-inter'
 import { shorthands } from '@tamagui/shorthands'
-import { themes, tokens } from '@tamagui/theme-base'
+import { themes, tokens as baseTokens } from '@tamagui/theme-base'
 
 import { animations } from './animations'
+import { allColors } from './color'
 
 const headingFont = createInterFont({
   size: {
@@ -41,6 +42,11 @@ const bodyFont = createInterFont(
     sizeLineHeight: (size) => Math.round(size * 1.1 + (size > 20 ? 10 : 10)),
   }
 )
+
+const tokens = createTokens({
+  ...baseTokens,
+  color: allColors,
+})
 
 export const config = createTamagui({
   animations,

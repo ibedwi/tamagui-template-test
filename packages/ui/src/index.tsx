@@ -1,3 +1,6 @@
 export * from 'tamagui'
 export * from './MyComponent'
 export * from './Card'
+export * from './Navbar/index'
+export * from './SearchInput/index'
+export * from './RecommendationCard'
