@@ -143,6 +143,7 @@ const colorTokens = {
 const neutralColorTokens = {
   white: '#FFFFFF',
   black: '#000000',
+  whiteBackground: '#F3F5FF',
 }
 type ColorTokensObject = {
   [key: string]: {

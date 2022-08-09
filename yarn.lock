@@ -3747,6 +3747,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tamagui/compose-refs@npm:^1.0.1-beta.138":
+  version: 1.0.1-beta.138
+  resolution: "@tamagui/compose-refs@npm:1.0.1-beta.138"
+  peerDependencies:
+    react: "*"
+  checksum: aecddae1075f98cdb4cda93be04c466cf21f84d71e99cac5ff1ab7f70552eccdf1087f4745d947c75757c29f8c1c0c41478f5dbf80705ae3e45a31ef6d99e71c
+  languageName: node
+  linkType: hard
+
 "@tamagui/core-node@npm:^1.0.1-beta.130":
   version: 1.0.1-beta.130
   resolution: "@tamagui/core-node@npm:1.0.1-beta.130"
@@ -3776,6 +3785,28 @@ __metadata:
   peerDependencies:
     react-native-web: "*"
   checksum: 8305e0615af18ef72571ccf23d3041cc92881de114f63e16c4079de925cf25a41f9bed35f1cb4b276139eace60a6888457855c7b050a6651d45b87044c84a2a5
+  languageName: node
+  linkType: hard
+
+"@tamagui/core@npm:^1.0.1-beta.138":
+  version: 1.0.1-beta.138
+  resolution: "@tamagui/core@npm:1.0.1-beta.138"
+  dependencies:
+    "@expo/match-media": ^0.3.0
+    "@tamagui/compose-refs": ^1.0.1-beta.138
+    "@tamagui/helpers": ^1.0.1-beta.138
+    "@tamagui/rnw": ^1.0.1-beta.138
+    "@tamagui/use-debounce": ^1.0.1-beta.138
+    "@tamagui/use-event": ^1.0.1-beta.138
+    "@tamagui/use-force-update": ^1.0.1-beta.138
+    expo-screen-orientation: ^4.3.0
+    hyphenate-style-name: ^1.0.4
+    normalize-css-color: ^1.0.2
+    react: "*"
+    react-dom: "*"
+  peerDependencies:
+    react-native-web: "*"
+  checksum: ef3b94d5069e1fb77258645d98147dcfc7c5748632b86f306912e1210df4afecccd01fd1e73d6829211f3b59486e43a4e794eff73ac123cdfd53aaac226e083c
   languageName: node
   linkType: hard
 
@@ -3856,6 +3887,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tamagui/feather-icons@npm:^1.0.1-beta.138":
+  version: 1.0.1-beta.138
+  resolution: "@tamagui/feather-icons@npm:1.0.1-beta.138"
+  dependencies:
+    "@tamagui/core": ^1.0.1-beta.138
+    react: "*"
+    react-dom: "*"
+    react-native-svg: ^12.4.3
+  checksum: 3027e74ce2cc63112386c12ecb03a6a8dc06a207cc6c8cdea3715fd2c4741cdb5c35176ed3127b5ab245e1765fe4887fdc47dc559c1a4fe7858ab57fe3d4ad2c
+  languageName: node
+  linkType: hard
+
 "@tamagui/focus-scope@npm:^1.0.1-beta.130":
   version: 1.0.1-beta.130
   resolution: "@tamagui/focus-scope@npm:1.0.1-beta.130"
@@ -3923,6 +3966,16 @@ __metadata:
     react: "*"
     react-native: "*"
   checksum: e057f711d240e50faf6e9e12c9df15d10074abd202e88142ce9b282d8fa0684411e986e36fe025dbbf073c1ec05b41c63d51381c166dfdb2bfa1c411793111b0
+  languageName: node
+  linkType: hard
+
+"@tamagui/helpers@npm:^1.0.1-beta.138":
+  version: 1.0.1-beta.138
+  resolution: "@tamagui/helpers@npm:1.0.1-beta.138"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: c61cb6865a73f6cd7246dd8e79de7d56db2fd021ad631826eb211010e89278939f500be913dd78d69806d1aeda2894f6d8a8a86958b02665aba8e5b39d3bed45
   languageName: node
   linkType: hard
 
@@ -4125,6 +4178,15 @@ __metadata:
   peerDependencies:
     react-native-web: "*"
   checksum: 49612f448c71ddb2b0ba26ff730a222f40afda09f45c3bdcd0a9d30e4d1b434c75bf595e8427941419bfc3735a2f955c32d3aa42b4e8df6b90c76cb3959ef723
+  languageName: node
+  linkType: hard
+
+"@tamagui/rnw@npm:^1.0.1-beta.138":
+  version: 1.0.1-beta.138
+  resolution: "@tamagui/rnw@npm:1.0.1-beta.138"
+  peerDependencies:
+    react-native-web: "*"
+  checksum: 33e8f3ad1a0cee707336f10a31e496e1b6de0a52682cb76499145c52cc4773a73cce4c58464add8b220a6b6c935fc67091c521db3b2d5416529b8fc72043318e
   languageName: node
   linkType: hard
 
@@ -4350,6 +4412,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tamagui/use-debounce@npm:^1.0.1-beta.138":
+  version: 1.0.1-beta.138
+  resolution: "@tamagui/use-debounce@npm:1.0.1-beta.138"
+  peerDependencies:
+    react: "*"
+  checksum: 6df0e23a9291d9742dea82091a3da5c796b1aac74933e9d883bc31b80124ec5de3bc3ef1ed9a9052456e1c92fc6899f09b63501caf9548c1b4115674ebe9f824
+  languageName: node
+  linkType: hard
+
 "@tamagui/use-direction@npm:^1.0.1-beta.130":
   version: 1.0.1-beta.130
   resolution: "@tamagui/use-direction@npm:1.0.1-beta.130"
@@ -4368,12 +4439,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tamagui/use-event@npm:^1.0.1-beta.138":
+  version: 1.0.1-beta.138
+  resolution: "@tamagui/use-event@npm:1.0.1-beta.138"
+  peerDependencies:
+    react: "*"
+  checksum: f338983f4387b90285a7eea972af307b3e866e8314099c6a90c7a20a395f66e171ee89f8e3797d5f8bc837d9c7ed51f537ecdf1d38cd1ee3cf053d725f539169
+  languageName: node
+  linkType: hard
+
 "@tamagui/use-force-update@npm:^1.0.1-beta.130":
   version: 1.0.1-beta.130
   resolution: "@tamagui/use-force-update@npm:1.0.1-beta.130"
   peerDependencies:
     react: "*"
   checksum: ef171d52be7e604d9455022d08d00291cc1c0d3fe1939beb6c2e84fd33a194930de5799fc208b8eefbe7ad565452cdf221dcd9eef127e4acc27b7ab64ed96982
+  languageName: node
+  linkType: hard
+
+"@tamagui/use-force-update@npm:^1.0.1-beta.138":
+  version: 1.0.1-beta.138
+  resolution: "@tamagui/use-force-update@npm:1.0.1-beta.138"
+  peerDependencies:
+    react: "*"
+  checksum: 3207f63d4fc16103ddebcdc09629e07a7b91fbfbbb43909c3c89866307dbdf7a5e2de4fc7ac5bd6563316a3f713b535aa50201eb04710d714cba3443a6d3890c
   languageName: node
   linkType: hard
 
@@ -7546,6 +7635,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"css-select@npm:^5.1.0":
+  version: 5.1.0
+  resolution: "css-select@npm:5.1.0"
+  dependencies:
+    boolbase: ^1.0.0
+    css-what: ^6.1.0
+    domhandler: ^5.0.2
+    domutils: ^3.0.1
+    nth-check: ^2.0.1
+  checksum: 2772c049b188d3b8a8159907192e926e11824aea525b8282981f72ba3f349cf9ecd523fdf7734875ee2cb772246c22117fc062da105b6d59afe8dcd5c99c9bda
+  languageName: node
+  linkType: hard
+
 "css-tree@npm:1.0.0-alpha.37":
   version: 1.0.0-alpha.37
   resolution: "css-tree@npm:1.0.0-alpha.37"
@@ -7573,7 +7675,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-what@npm:^6.0.1":
+"css-what@npm:^6.0.1, css-what@npm:^6.1.0":
   version: 6.1.0
   resolution: "css-what@npm:6.1.0"
   checksum: b975e547e1e90b79625918f84e67db5d33d896e6de846c9b584094e529f0c63e2ab85ee33b9daffd05bff3a146a1916bec664e18bb76dd5f66cbff9fc13b2bbe
@@ -8226,6 +8328,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dom-serializer@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "dom-serializer@npm:2.0.0"
+  dependencies:
+    domelementtype: ^2.3.0
+    domhandler: ^5.0.2
+    entities: ^4.2.0
+  checksum: cd1810544fd8cdfbd51fa2c0c1128ec3a13ba92f14e61b7650b5de421b88205fd2e3f0cc6ace82f13334114addb90ed1c2f23074a51770a8e9c1273acbc7f3e6
+  languageName: node
+  linkType: hard
+
 "domain-browser@npm:^1.1.1":
   version: 1.2.0
   resolution: "domain-browser@npm:1.2.0"
@@ -8240,7 +8353,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"domelementtype@npm:^2.0.1, domelementtype@npm:^2.2.0":
+"domelementtype@npm:^2.0.1, domelementtype@npm:^2.2.0, domelementtype@npm:^2.3.0":
   version: 2.3.0
   resolution: "domelementtype@npm:2.3.0"
   checksum: ee837a318ff702622f383409d1f5b25dd1024b692ef64d3096ff702e26339f8e345820f29a68bcdcea8cfee3531776b3382651232fbeae95612d6f0a75efb4f6
@@ -8274,6 +8387,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"domhandler@npm:^5.0.1, domhandler@npm:^5.0.2":
+  version: 5.0.3
+  resolution: "domhandler@npm:5.0.3"
+  dependencies:
+    domelementtype: ^2.3.0
+  checksum: 0f58f4a6af63e6f3a4320aa446d28b5790a009018707bce2859dcb1d21144c7876482b5188395a188dfa974238c019e0a1e610d2fc269a12b2c192ea2b0b131c
+  languageName: node
+  linkType: hard
+
 "domutils@npm:^1.7.0":
   version: 1.7.0
   resolution: "domutils@npm:1.7.0"
@@ -8292,6 +8414,17 @@ __metadata:
     domelementtype: ^2.2.0
     domhandler: ^4.2.0
   checksum: abf7434315283e9aadc2a24bac0e00eab07ae4313b40cc239f89d84d7315ebdfd2fb1b5bf750a96bc1b4403d7237c7b2ebf60459be394d625ead4ca89b934391
+  languageName: node
+  linkType: hard
+
+"domutils@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "domutils@npm:3.0.1"
+  dependencies:
+    dom-serializer: ^2.0.0
+    domelementtype: ^2.3.0
+    domhandler: ^5.0.1
+  checksum: 23aa7a840572d395220e173cb6263b0d028596e3950100520870a125af33ff819e6f609e1606d6f7d73bd9e7feb03bb404286e57a39063b5384c62b724d987b3
   languageName: node
   linkType: hard
 
@@ -8449,6 +8582,13 @@ __metadata:
   version: 2.2.0
   resolution: "entities@npm:2.2.0"
   checksum: 19010dacaf0912c895ea262b4f6128574f9ccf8d4b3b65c7e8334ad0079b3706376360e28d8843ff50a78aabcb8f08f0a32dbfacdc77e47ed77ca08b713669b3
+  languageName: node
+  linkType: hard
+
+"entities@npm:^4.2.0":
+  version: 4.3.1
+  resolution: "entities@npm:4.3.1"
+  checksum: e8f6d2bac238494b2355e90551893882d2675142be7e7bdfcb15248ed0652a630678ba0e3a8dc750693e736cb6011f504c27dabeb4cd3330560092e88b105090
   languageName: node
   linkType: hard
 
@@ -9773,6 +9913,17 @@ __metadata:
   peerDependencies:
     expo: "*"
   checksum: 68b8392712b54c4599335142f02ce9072bc841c710e966f2d291a8a38865f60b862494039b24b85d1e8aef76583e1a373fce55e6673e75376bf92f463e6e39f3
+  languageName: node
+  linkType: hard
+
+"expo-screen-orientation@npm:^4.3.0":
+  version: 4.3.0
+  resolution: "expo-screen-orientation@npm:4.3.0"
+  dependencies:
+    "@expo/config-plugins": ~5.0.0
+  peerDependencies:
+    expo: "*"
+  checksum: 847306c90a39af2e580e2529e179e24bf1629517eecc75a165d143412f6b7101d940b3a965d815819e17247210eee6d6e39d5fe328aa3991a0fc5ba24b85ae1b
   languageName: node
   linkType: hard
 
@@ -17194,6 +17345,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-native-svg@npm:^12.4.3":
+  version: 12.4.3
+  resolution: "react-native-svg@npm:12.4.3"
+  dependencies:
+    css-select: ^5.1.0
+    css-tree: ^1.1.3
+  peerDependencies:
+    react: "*"
+    react-native: ">=0.50.0"
+  checksum: 2dd74bf377ebac3e08dadc6016f7b827d59e1066a62d00d476ae40665988149f08cf7b6e673ea433bd7677f1bc1a454bd33f6bf8e2bc2758aeec830fc1dadc03
+  languageName: node
+  linkType: hard
+
 "react-native-web@npm:0.18.1":
   version: 0.18.1
   resolution: "react-native-web@npm:0.18.1"
@@ -17927,6 +18091,7 @@ __metadata:
   resolution: "rg-reseearch-tamagui@workspace:."
   dependencies:
     "@manypkg/cli": ^0.19.1
+    "@tamagui/feather-icons": ^1.0.1-beta.138
     "@testing-library/react-native": ^11.0.0
     "@types/react": ^17.0.39
     "@types/react-native": ^0.67.2

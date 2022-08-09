@@ -19,9 +19,11 @@ const RGButton = styled(ButtonFrame, {
         backgroundColor: '$white',
         borderWidth: 1,
         borderColor: '$cloudy60',
-        color: '$white',
+        color: '$black',
         hoverStyle: {
           backgroundColor: '$cloudy10',
+          borderColor: '$cloudy60',
+          borderWidth: 1,
         },
       },
       outline: {},
@@ -33,11 +35,17 @@ const RGButton = styled(ButtonFrame, {
         padding: 16,
         borderRadius: 136,
       },
+      md: {
+        height: 36,
+        padding: 16,
+        borderRadius: 100,
+      },
     },
   },
 
   defaultVariants: {
-    size: 'lg',
+    type: 'primary',
+    size: 'md',
   },
 })
 
