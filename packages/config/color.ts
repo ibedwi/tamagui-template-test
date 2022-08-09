@@ -140,7 +140,10 @@ const colorTokens = {
     110: '#330003',
   },
 }
-
+const neutralColorTokens = {
+  white: '#FFFFFF',
+  black: '#000000',
+}
 type ColorTokensObject = {
   [key: string]: {
     [key: number]: string
@@ -169,6 +172,7 @@ function makeColor(obj: ColorTokensObject) {
 
 const allColors = {
   ...makeColor(colorTokens),
+  ...neutralColorTokens,
 }
 
 export { allColors }

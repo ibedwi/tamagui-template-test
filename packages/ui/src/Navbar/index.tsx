@@ -1,5 +1,5 @@
-import { Text, XStack, H4, Paragraph, Button } from 'tamagui'
-import { RGButton } from '../Button'
+import { XStack, H4, Paragraph } from 'tamagui'
+import { Button } from '../Button'
 
 export const Navbar = () => {
   return (
@@ -12,8 +12,8 @@ export const Navbar = () => {
       </XStack>
 
       <XStack>
-        <Button backgroundColor={'$orange50'}>Langganan</Button>
-        <RGButton type={'primary'}>Langganan Sekarang</RGButton>
+        <Button type={'secondary'}>Masuk / Daftar</Button>
+        <Button type={'primary'}>Langganan Sekarang</Button>
       </XStack>
     </XStack>
   )
