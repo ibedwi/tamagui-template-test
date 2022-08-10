@@ -4,6 +4,7 @@ module.exports = function (api) {
     presets: [['babel-preset-expo', { jsxRuntime: 'automatic' }]],
     plugins: [
       'react-native-reanimated/plugin',
+      '@babel/plugin-syntax-jsx',
       [
         '@tamagui/babel-plugin',
         {
@@ -11,9 +12,12 @@ module.exports = function (api) {
           config: './tamagui.config.ts',
         },
       ],
-      ['transform-inline-environment-variables', {
-        include: 'TAMAGUI_TARGET'
-      }]
+      [
+        'transform-inline-environment-variables',
+        {
+          include: 'TAMAGUI_TARGET',
+        },
+      ],
     ],
   }
 }

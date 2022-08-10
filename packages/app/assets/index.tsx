@@ -56,4 +56,57 @@ const TOP_FEATURE = [
   },
 ]
 
-export { RUANG_BELAJAR_MENU, TOP_FEATURE }
+const ARTICLE = [
+  {
+    name: 'Tips Parenting',
+    imageLink:
+      'https://imgix3.ruangguru.com/assets/homepage/Copy+of+Parenting+25+Januari+2022_mobile+apps+5-cara-mengatasi-ketakutan-anak-pada-pelajaran-matematika.jpg?convert=webp&height=150',
+  },
+  {
+    name: 'Manfaat Pelukan',
+    imageLink:
+      'https://imgix3.ruangguru.com/assets/homepage/Copy+of+Parenting_mobile+apps+7-manfaat-pelukan-pada-anak-yang-jarang-smart-parents-ketahui.jpg?convert=webp&height=150',
+  },
+  {
+    name: 'Tips Menabung',
+    imageLink:
+      'https://imgix3.ruangguru.com/assets/homepage/Copy+of+Mobile+Apps+-+Parenting+-+7+Tips+Mengajari+Anak+Mengelola+Keuangan+Sejak+Kecil.jpg?convert=webp&height=150',
+  },
+  {
+    name: 'Fitur Baru Ruangguru',
+    imageLink:
+      'https://imgix3.ruangguru.com/assets/homepage/Ukuran+Mobile+Apps+-+Soal+Fitur+Gak+Pelit.jpg?convert=webp&height=150',
+  },
+  {
+    name: 'Harga Paket Ruangguru',
+    imageLink:
+      'https://imgix3.ruangguru.com/assets/homepage/Kegiatan+Ruangguru+-+Info+Produk+dan+Harga+Ruangguru+2022-02.jpg?convert=webp&height=150',
+  },
+  {
+    name: 'Bimble Online',
+    imageLink:
+      'https://imgix3.ruangguru.com/assets/homepage/RGFK+-+Keunggulan+Bimbel+Online+untuk+Anak-1.jpg?convert=webp&height=150',
+  },
+  {
+    name: 'Pendidikan Anak',
+    imageLink:
+      'https://imgix3.ruangguru.com/assets/homepage/5+Tips+Belajar+Efektif+dan+Hemat+untuk+Anak%2C+Apa+Saja+Ya_+%28mobile%29+%281%29.jpg?convert=webp&height=150',
+  },
+  {
+    name: 'Tips Mengajari Membaca',
+    imageLink:
+      'https://imgix3.ruangguru.com/assets/homepage/RGFK+-+Cara+mengajarkan+anak+membaca+%28mobile%29.jpg?convert=webp&height=150',
+  },
+  {
+    name: 'Aktivitas Bareng Keluarga',
+    imageLink:
+      'https://imgix3.ruangguru.com/assets/homepage/Parenting_Mulai+Kebiasaan+Olahraga+Bersama+Anak+%281%29.jpg?convert=webp&height=150',
+  },
+  {
+    name: 'Tumbuh Kembang Anak',
+    imageLink:
+      'https://imgix3.ruangguru.com/assets/homepage/Warna+Cat+Kamar+dan+Efeknya+terhadap+Perkembangan+Anak.jpg?convert=webp&height=150',
+  },
+]
+
+export { RUANG_BELAJAR_MENU, TOP_FEATURE, ARTICLE }

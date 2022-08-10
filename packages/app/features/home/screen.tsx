@@ -14,9 +14,12 @@ import {
   MenuButton,
   FeatureCard,
   H5,
+  SearchInput,
+  ArticleCard,
+  LinearGradient,
 } from '@my/ui'
 import { Dimensions, SafeAreaView, ScrollView, Image } from 'react-native'
-import { RUANG_BELAJAR_MENU, TOP_FEATURE } from 'app/assets'
+import { RUANG_BELAJAR_MENU, TOP_FEATURE, ARTICLE } from 'app/assets'
 
 const BANNER_IMAGE =
   'https://imgix3.ruangguru.com/assets/homepage/web/banner-large-dafa-lulu.png?convert=webp'
@@ -27,17 +30,25 @@ export function HomeScreen() {
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <ScrollView style={{ flex: 1, backgroundColor: '#F3F5FF' }}>
-        <YStack
-          space
-          maw={'100%'}
-          jc="flex-start"
-          ai="stretch"
-          backgroundColor={'$whiteBackground'}
-        >
-          <YStack f={1} space justifyContent={'space-between'} jc={'flex-start'}>
-            <Navbar />
-
-            <Layout space={'$2'}>
+        <YStack maw={'100%'} jc="flex-start" ai="stretch" backgroundColor={'$whiteBackground'}>
+          <Navbar />
+          <YStack f={1} justifyContent={'space-between'} jc={'flex-start'} position="relative">
+            <LinearGradient
+              als="center"
+              width={'100%'}
+              height={200}
+              colors={['#6753CA', '#3B9DAE']}
+              start={[1, 0]}
+              borderBottomLeftRadius="$3"
+              borderBottomRightRadius="$3"
+              end={[0, 1]}
+            />
+            <Layout space={'$4'} zIndex={10} position="absolute" top={10} pt={'$4'}>
+              <YStack px="$4">
+                <H4 color="$white">Hi Squad</H4>
+                <Paragraph color="$white">mau belajar apa hari ini?</Paragraph>
+              </YStack>
+              <SearchInput />
               <YStack
                 space={'$2'}
                 px={'$3'}
@@ -76,6 +87,22 @@ export function HomeScreen() {
                 <ScrollView horizontal={true}>
                   {TOP_FEATURE.map((menu) => (
                     <FeatureCard key={menu.name} imageSrc={menu.imageLink} mr="$2" />
+                  ))}
+                </ScrollView>
+              </YStack>
+
+              <YStack px="$3" pt="$3" pb="$4" space="$2">
+                <Paragraph fontSize={15} fontWeight="bold">
+                  Perluas wawasanmu dengan baca artikel
+                </Paragraph>
+                <ScrollView horizontal={true} style={{ paddingBottom: 10 }}>
+                  {ARTICLE.map((menu) => (
+                    <ArticleCard
+                      key={menu.name}
+                      imageSrc={menu.imageLink}
+                      mr="$2"
+                      title={menu.name}
+                    />
                   ))}
                 </ScrollView>
               </YStack>
