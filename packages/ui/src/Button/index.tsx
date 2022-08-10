@@ -1,8 +1,9 @@
+import React from 'react'
 import { ButtonFrame, GetProps, Stack, styled, SizableText } from 'tamagui'
 import { resolveTextColor } from './Button.utils'
 
 const RGButton = styled(ButtonFrame, {
-  fontFamily: '$body',
+  // fontFamily: '$body',
   variants: {
     type: {
       primary: {
@@ -31,14 +32,16 @@ const RGButton = styled(ButtonFrame, {
     },
     size: {
       lg: {
-        height: 44,
-        padding: 16,
+        minHeight: 44,
         borderRadius: 136,
+        paddingLeft: 16,
+        paddingRight: 16,
       },
       md: {
-        height: 36,
-        padding: 16,
+        minHeight: 36,
         borderRadius: 100,
+        paddingLeft: 16,
+        paddingRight: 16,
       },
     },
   },
@@ -54,8 +57,8 @@ const RGButtonText = styled(SizableText, {
   selectable: false,
   cursor: 'inherit',
   flexGrow: 0,
-  flexShrink: 1,
-  ellipse: true,
+  // flexShrink: 1,
+  // ellipse: true,
   fontWeight: '$7',
   fontSize: 14,
 })
@@ -71,8 +74,10 @@ export const Button = (props: ButtonProps) => {
   const color = resolveTextColor(restProps.type)
 
   return (
-    <RGButton {...restProps}>
-      <RGButtonText color={color}>{children}</RGButtonText>
-    </RGButton>
+    <>
+      <RGButton {...restProps}>
+        <RGButtonText color={color}>{children}</RGButtonText>
+      </RGButton>
+    </>
   )
 }

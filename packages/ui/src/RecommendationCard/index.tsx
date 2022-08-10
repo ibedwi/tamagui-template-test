@@ -1,4 +1,6 @@
-import { Card, CardProps, Paragraph, Image } from 'tamagui'
+import React from 'react'
+import { Image } from 'react-native'
+import { Card, CardProps, Paragraph } from 'tamagui'
 
 const imageSrc = 'https://imgix3.ruangguru.com/assets/miscellaneous/image_9fszuy_675.png'
 
@@ -10,7 +12,15 @@ function RecommendationCard(props: CardProps) {
         <Paragraph theme="alt2">Now available</Paragraph>
       </Card.Header>
       <Card.Background>
-        <Image pos="absolute" width={300} height={142} resizeMode="cover" src={imageSrc} />
+        <Image
+          resizeMode="cover"
+          source={{ uri: imageSrc }}
+          style={{
+            position: 'absolute',
+            width: 300,
+            height: 142,
+          }}
+        />
       </Card.Background>
     </Card>
   )

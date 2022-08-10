@@ -1,3 +1,4 @@
+import React from 'react'
 import { Input, Paragraph, Text, XStack } from 'tamagui'
 import { Button } from '../Button'
 

@@ -1,53 +1,75 @@
+import React from 'react'
 import {
   YStack,
-  Input,
-  PlaceCard,
   Navbar,
-  SearchInput,
   RecommendationCard,
   Layout,
   Banner,
+  Paragraph,
+  useMedia,
+  H3,
+  H4,
+  XStack,
+  Stack,
+  MenuButton,
 } from '@my/ui'
-import React from 'react'
-import { H3, H4, XStack } from 'tamagui'
-import { ScrollView } from 'react-native'
+import { Dimensions, SafeAreaView, ScrollView, Image } from 'react-native'
+import { RUANG_BELAJAR_MENU } from 'app/assets'
 
 const BANNER_IMAGE =
   'https://imgix3.ruangguru.com/assets/homepage/web/banner-large-dafa-lulu.png?convert=webp'
+
 export function HomeScreen() {
+  const deviceWidth = Dimensions.get('window').width
+  const media = useMedia()
   return (
-    <YStack
-      f={1}
-      space
-      maw={'100vw'}
-      jc="flex-start"
-      ai="stretch"
-      backgroundColor={'$whiteBackground'}
-    >
-      <YStack f={1} space justifyContent={'space-between'} jc={'flex-start'}>
-        <Navbar />
+    <SafeAreaView style={{ flex: 1 }}>
+      <ScrollView style={{ flex: 1, backgroundColor: '#F3F5FF' }}>
+        <YStack
+          space
+          maw={'100%'}
+          jc="flex-start"
+          ai="stretch"
+          backgroundColor={'$whiteBackground'}
+        >
+          <YStack f={1} space justifyContent={'space-between'} jc={'flex-start'}>
+            <Navbar />
 
-        <Layout space={'$2'}>
-          <YStack
-            space={'$2'}
-            px={'$3'}
-            py={'$2'}
-            backgroundColor={'$seagreen20'}
-            borderRadius={10}
-          >
-            <H4>Penawaran spesial terbatas!</H4>
-            <ScrollView horizontal={true}>
-              <RecommendationCard />
-              <RecommendationCard />
-              <RecommendationCard />
-              <RecommendationCard />
-              <RecommendationCard />
-            </ScrollView>
+            <Layout space={'$2'}>
+              <YStack
+                space={'$2'}
+                px={'$3'}
+                py={'$2'}
+                backgroundColor={'$seagreen20'}
+                borderRadius={10}
+              >
+                <H4>Penawaran spesial terbatas!</H4>
+                <ScrollView horizontal={true}>
+                  <RecommendationCard />
+                  <RecommendationCard />
+                  <RecommendationCard />
+                  <RecommendationCard />
+                  <RecommendationCard />
+                </ScrollView>
+              </YStack>
+
+              <Banner width={1020} height={100} imageSrc={BANNER_IMAGE} />
+
+              <YStack px="$3" pt="$3" pb="$2" space="$2" backgroundColor="$white">
+                <Image
+                  source={{ uri: 'https://imgix3.ruangguru.com/assets/homepage/logorubel.png' }}
+                  style={{ height: 24, width: 130, resizeMode: 'contain' }}
+                />
+                <XStack flexWrap="wrap" space="$2" backgroundColor="$white">
+                  {RUANG_BELAJAR_MENU.map((menu) => (
+                    <MenuButton key={menu.name} name={menu.name} iconLink={menu.iconLink} />
+                  ))}
+                </XStack>
+              </YStack>
+            </Layout>
           </YStack>
-
-          <Banner width={1020} height={100} imageSrc={BANNER_IMAGE} />
-        </Layout>
-      </YStack>
-    </YStack>
+        </YStack>
+      </ScrollView>
+    </SafeAreaView>
   )
 }

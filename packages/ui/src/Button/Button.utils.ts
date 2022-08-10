@@ -1,10 +1,10 @@
 const resolveTextColor = (type?: string) => {
   if (!type) {
-    return '$white'
+    return '$black'
   }
 
   switch (type) {
-    case '$secondary':
+    case 'secondary':
       return '$black'
 
     case 'primary':
