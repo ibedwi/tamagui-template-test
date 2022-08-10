@@ -8,6 +8,7 @@ import Head from 'next/head'
 import React, { useMemo } from 'react'
 import type { SolitoAppProps } from 'solito'
 import 'raf/polyfill'
+import '../custom.css'
 
 function MyApp({ Component, pageProps }: SolitoAppProps) {
   const [theme, setTheme] = useRootTheme()
