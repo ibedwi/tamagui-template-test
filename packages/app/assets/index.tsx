@@ -23,4 +23,37 @@ const RUANG_BELAJAR_MENU = [
   },
 ]
 
-export { RUANG_BELAJAR_MENU }
+const TOP_FEATURE = [
+  {
+    imageLink:
+      'https://imgix3.ruangguru.com/assets/homepage/web/ba_live_teaching_feature_list_card.png?height=114',
+    name: 'brainacademy',
+  },
+  {
+    imageLink:
+      'https://imgix3.ruangguru.com/assets/homepage/web+banner_best+feature_tmb.png?height=114',
+    name: 'minat-bakat',
+  },
+  {
+    imageLink:
+      'https://imgix3.ruangguru.com/assets/homepage/web/roboguru-feature-list-card-fixed.png?convert=webp&height=114',
+    name: 'roboguru',
+  },
+  {
+    imageLink:
+      'https://imgix3.ruangguru.com/assets/homepage/webbanner_best+feature_banksoal.png?height=114',
+    name: 'banksoal',
+  },
+  {
+    imageLink:
+      'https://imgix3.ruangguru.com/assets/homepage/web/tryout-feature-list-card-fixed.png?convert=webp&height=114',
+    name: 'rg-tryout',
+  },
+  {
+    imageLink:
+      'https://imgix3.ruangguru.com/assets/homepage/web/purchase-product-feature-list-card-fixed.png?convert=webp&height=114',
+    name: 'rg-purchase',
+  },
+]
+
+export { RUANG_BELAJAR_MENU, TOP_FEATURE }

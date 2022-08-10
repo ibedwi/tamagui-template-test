@@ -12,9 +12,11 @@ import {
   XStack,
   Stack,
   MenuButton,
+  FeatureCard,
+  H5,
 } from '@my/ui'
 import { Dimensions, SafeAreaView, ScrollView, Image } from 'react-native'
-import { RUANG_BELAJAR_MENU } from 'app/assets'
+import { RUANG_BELAJAR_MENU, TOP_FEATURE } from 'app/assets'
 
 const BANNER_IMAGE =
   'https://imgix3.ruangguru.com/assets/homepage/web/banner-large-dafa-lulu.png?convert=webp'
@@ -65,6 +67,17 @@ export function HomeScreen() {
                     <MenuButton key={menu.name} name={menu.name} iconLink={menu.iconLink} />
                   ))}
                 </XStack>
+              </YStack>
+
+              <YStack px="$3" pt="$3" pb="$4" space="$2" backgroundColor="$white">
+                <Paragraph fontSize={15} fontWeight="bold">
+                  Fitur Unggulan
+                </Paragraph>
+                <ScrollView horizontal={true}>
+                  {TOP_FEATURE.map((menu) => (
+                    <FeatureCard key={menu.name} imageSrc={menu.imageLink} mr="$2" />
+                  ))}
+                </ScrollView>
               </YStack>
             </Layout>
           </YStack>

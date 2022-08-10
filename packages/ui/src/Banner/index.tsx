@@ -1,6 +1,6 @@
 import React from 'react'
 import { Image } from 'react-native'
-import {  Stack, StackPropsBase } from 'tamagui'
+import { Stack, StackPropsBase } from 'tamagui'
 
 type BannerProps = StackPropsBase & {
   imageSrc: string
